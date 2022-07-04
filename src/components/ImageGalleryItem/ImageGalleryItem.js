@@ -15,11 +15,11 @@ const ImageGalleryItem = ({ data, openModal }) => {
 
 ImageGalleryItem.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.number.isRequired,
     tags: PropTypes.string.isRequired,
     webformatURL: PropTypes.string.isRequired,
     largeImageURL: PropTypes.string.isRequired,
   }),
+  openModal: PropTypes.func.isRequired,
 };
 
 export default ImageGalleryItem;
